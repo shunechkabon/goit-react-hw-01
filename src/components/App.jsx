@@ -6,15 +6,15 @@ import friends from "../friends.json";
 import transactions from '../transactions.json';
 
 const App = () => {
-return (
-    <>
-        <Profile
+    return (
+        <>
+            <Profile
             name={userData.username}
             tag={userData.tag}
-            ocation={userData.location}
+            location={userData.location}
             image={userData.avatar}
             stats={userData.stats}
-        />
+            />
         <FriendList friends={friends} />
         <TransactionHistory items={transactions} />
     </>
