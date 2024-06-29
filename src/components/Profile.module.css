@@ -4,7 +4,7 @@
     border-radius: 10px;
     text-align: center;
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 20px;
     background-color: #f9f6f6;
 }
 
@@ -19,13 +19,13 @@
     margin: 0 auto;
 }
 
-.imageCircle .profileImage {
+.imageCircle .image {
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
 
-.profileName {
+.name {
     font-size: 50px;
     font-weight: 600;
     font-family: sans-serif;
@@ -33,7 +33,7 @@
     margin-bottom: 20px;
 }
 
-.profileTag {
+.tag {
     font-size: 34px;
     font-weight: 400;
     font-family: sans-serif;
@@ -43,11 +43,40 @@
     letter-spacing: 0.04em;
 }
 
-.profileLocation {
+.location {
     font-size: 34px;
     font-weight: 400;
     font-family: sans-serif;
     margin-top: 0;
+    margin-bottom: 20px;
     color: #7c7979;
     letter-spacing: 0.04em;
+}
+
+.statsList {
+    display: flex;
+    border-top: 3px solid #7c7979;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.statsList .statsItem {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-family: sans-serif;
+    padding: 20px;
+    width: 33.333%;
+    background-color: #dcd8d8;
+    letter-spacing: 0.04em;
+}
+
+.statsList .statsItem:not(:last-child) {
+    border-right: 3px solid #7c7979;
+}
+
+.statsItem .statsNumber {
+    font-weight: 600;
+    margin-top: 10px;
 }

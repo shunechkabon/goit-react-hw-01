@@ -1,33 +1,33 @@
 // Завдання 1 - Профіль соціальної мережі
-import css from './Profile.module.css';
+import s from './Profile.module.css';
 
 export const Profile = ({ name, tag, location, image, stats }) => {
   return (
-    <div className={css.profileCard}>
+    <div className={s.profileCard}>
       <div>
-        <div className={css.imageCircle}>
-          <img className={css.profileImage}
+        <div className={s.imageCircle}>
+          <img className={s.image}
           src={image}
           alt={name}
           />
         </div>
-        <p className={css.profileName}>{name}</p>
-        <p className={css.profileTag}>@{tag}</p>
-        <p className={css.profileLocation}>{location}</p>
+        <p className={s.name}>{name}</p>
+        <p className={s.tag}>@{tag}</p>
+        <p className={s.location}>{location}</p>
       </div>
 
-      <ul>
-        <li>
+      <ul className={s.statsList}>
+        <li className={s.statsItem}>
           <span>Followers</span>
-          <span>{stats.followers}</span>
+          <span className={s.statsNumber}>{stats.followers}</span>
         </li>
-        <li>
+        <li className={s.statsItem}>
           <span>Views</span>
-          <span>{stats.views}</span>
+          <span className={s.statsNumber}>{stats.views}</span>
         </li>
-        <li>
+        <li className={s.statsItem}>
           <span>Likes</span>
-          <span>{stats.likes}</span>
+          <span className={s.statsNumber}>{stats.likes}</span>
         </li>
       </ul>
 </div>);

@@ -1,9 +1,14 @@
-export const FriendListItem = ({ avatar, name, isOnline }) => {
-  return (
-    <div className={`friend-item ${isOnline ? 'online' : 'offline'}`}>
-        <img src={avatar} alt="Avatar" width="48" />
-        <p>{name}</p>
-        <p className="status">{isOnline ? 'Online' : 'Offline'}</p>
+import s from './FriendListItem.module.css';
+
+export const FriendListItem = ({ avatar, name, isOnline, }) => {
+    const statusClass = isOnline ? s.online : s.offline;
+    const status = [s['friend-status'], statusClass].join(' ');
+
+    return (
+        <div className={s.friendItem}>
+        <img src={avatar} alt="Avatar" width="100" />
+        <p className={s.name}>{name}</p>
+        <p className={status}>{isOnline ? 'Online' : 'Offline'}</p>
     </div>
 );
 };

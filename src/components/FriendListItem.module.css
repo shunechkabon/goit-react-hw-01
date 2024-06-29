@@ -1,0 +1,30 @@
+.friendItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.friend-status.online {
+    color: green;
+}
+
+.friend-status.offline {
+    color: red;
+}
+
+.friend-status {
+    font-family: sans-serif;
+    align-self: center;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.name {
+    font-family: sans-serif;
+    align-self: center;
+    font-size: 28px;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 0;
+}

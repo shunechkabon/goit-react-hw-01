@@ -1,8 +1,9 @@
 // Завдання 3 - Історія транзакцій
+import s from './TransactionHistory.module.css';
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <table>
+    <table className={s.table}>
   <thead>
     <tr>
       <th>Type</th>
